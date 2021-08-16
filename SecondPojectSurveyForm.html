@@ -1,0 +1,138 @@
+<style>
+main{
+    background-color: rgb(35, 35, 189);
+    padding-top: 3%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 30%;
+    border-radius: 1rem;
+}
+#title{
+        text-align: center;
+        color: white;
+    }
+#description {
+    text-align: center;
+    color: white;
+}
+#survey-form {
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    border-radius: 1rem;
+}
+#survey-form label {
+    font-family: sans-serif;
+    text-align: center;
+}
+ #name {
+padding: 10px;
+border-radius: 0.8rem;
+border: 1px solid blue;
+width: 100%;
+}
+#email {
+padding: 10px;
+border-radius: 0.8rem;
+border: 1px solid blue;
+width: 100%;
+}
+#number {
+padding: 10px;
+border-radius: 0.8rem;
+border: 1px solid blue;
+width: 100%;
+}
+
+#name-label{
+    margin: 5%;
+    font-size: 15px;
+    color: blue;
+}
+#email-label{
+    margin: 5%;
+    font-size: 15px;
+    color: blue;
+}
+#number-label{
+    margin: 5%;
+    font-size: 15px;
+    color: blue;
+}
+#dropdown {
+    padding: 5px;
+    border-radius: 0.8rem;
+    border: 1px solid blue;
+    color: blue;
+    background-color: rgb(236, 234, 230);
+    font-size: 16px;
+}
+#comments{
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+#submit {
+width: 100%;
+padding: 0.5rem;
+border-radius: 1rem;
+border: 2px solid rgb(31, 31, 133);
+background-color: blue;
+color: whitesmoke;
+font-size: 20px;
+}
+#submit:hover {
+    cursor: pointer;
+}
+p{
+    color: blue;
+}
+</style>
+<body>
+<main>
+    <h1 id="title">Science Survey Form</h1>
+    <p id="description"> This form collects personal info about your science experience. Please complete the form below.</p>
+    <form id="survey-form" action="">
+        <div class="form-elements">
+            <label id="name-label" for="name">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required=""><br><br>
+            <label id="email-label" for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" required=""><br>
+            <label id="number-label" for="number">Age</label><br>
+            <input type="number" id="number" min="0" max="15" placeholder="Enter Your Age" required=""><br>
+            <p>Select your best subject</p>
+            <select id="dropdown" name="subject" required="">
+                <option selected="" value="">Select subject</option>
+                <option value="maths">Maths</option>
+                <option value="physics">Physics</option>
+                <option value="chem">Chemistry</option>
+                <option value="fmaths">Further Maths</option>
+            </select><br>
+            <p>What is your experience with science subjects?</p>
+            <input name="experience" value="good" type="radio">Good<br>
+            <input name="experience" value="beter" type="radio">Better<br>
+            <input name="experience" value="best" type="radio">Best<br>
+            <input name="experience" value="notsure" type="radio">Notsure
+            <p>How will you prefer science teaching?</p>
+            <select id="dropdown" name="science" required="">
+                <option selected="" value="" required="">Select below</option>
+                <option value="theory">Theory</option>
+                <option value="pratical">Practical</option>
+                <option value="all">Both</option>
+            </select>
+            <p>Select your 3 best sceince subjects</p>
+        </div>
+        <div class="form-elements">
+            <input type="checkbox" name="select" value="maths">Maths<br>
+            <input type="checkbox" name="select" value="bio">Biology<br>
+            <input type="checkbox" name="select" value="chem">Chemistry<br>
+            <input type="checkbox" name="select" value="phy">Physics<br>
+            <input type="checkbox" name="select" value="fmath">Further Maths
+        </div>
+        <p>Write your opinion about science below</p>
+        <textarea id="comments" placeholder="enter your opinion here!!!!!"></textarea><br><br>
+        <button id="submit">Submit</button>
+    </form>
+  </main>
+</body>

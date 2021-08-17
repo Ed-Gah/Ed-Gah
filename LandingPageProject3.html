@@ -1,0 +1,256 @@
+<style>
+:root {
+    --font: monospace;
+    --txtcolor: turquoise;
+    --backgroudc: whitesmoke;
+}
+body {
+    background-color: whitesmoke;
+    border-radius: 1px;
+}
+#header {
+    border: 2px solid turquoise;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.img-heading {
+    display: flex;
+    font-family: var(--font);
+}
+#header-img {
+    width: 150px;
+    height: 75px;
+}
+#nav-bar {
+    position: fixed;
+    position: relative;
+    left: 75%;
+}
+.nav-ul{
+    display: flex;
+    text-decoration: none;
+}
+.nav-link {
+    background-color: var(--backgroudc);
+    padding: 5px;
+    list-style-type: none;
+}
+.nav-link a{
+    display: block;
+    text-decoration: none;
+    padding: 0rem 0;
+    color: var(--txtcolor);
+    font-size: 1rem;
+    font-family: monospace;
+}
+@media (min-width: 175px) {
+    #nav-bar {
+        position: relative;
+        left: 30%;
+    }
+}
+h1 {
+    padding-top: -20px;
+    color: turquoise;
+}
+footer ul {
+    display: flex;
+}
+#form {
+    position: relative;
+    left: 70%;
+}
+#email {
+    padding: 10px;
+    border-radius: 0.8rem;
+    border: 1px solid var(--txtcolor);
+    width: 17%;
+    margin-top: -20px;
+    color: var(--txtcolor);
+}
+#submit {
+    padding: 5px;
+    border-radius: 0.8rem;
+    border: 1px solid var(--txtcolor);
+    width: 10%;
+    color: var(--txtcolor);
+}
+#submit:hover {
+    cursor: pointer;
+    background-color: transparent;
+}
+#services {
+    text-align: center;
+}
+h2, p{
+    text-align: center;
+    color: var(--txtcolor);
+}
+#video {
+    margin-top: 30px;
+    width: 100%;
+    height: 75%;
+    border-radius: 3px;
+}
+@media (max-width: 800px){
+.product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin-left:3%;
+    margin-top: 20px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  .product .dev {
+    background-color: var(--txtcolor);
+    color: var(--backgroudc);
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .product ol {
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+  }
+  .product ol li {
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+  }
+  li {
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+    display: list-item;
+    text-align: -webkit-match-parent
+  }
+  ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  .btn {
+    padding: 5px;
+    border-radius: 0.8rem;
+    border: 1px solid var(--txtcolor);
+    width: 100%;
+    color: var(--txtcolor);
+  }
+  .btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  #pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+</style>
+<body>   
+<header id="header">
+    <div class="img-heading">
+    <img id="header-img" src="https://cdn1.vc4a.com/media/2021/01/transparent-logo-150x150.png">
+    <h1 class="bohikor">Bohikor Home of Software Developement</h1>
+</div>
+<form action="https://www.freecodecamp.com/email-submit" for="email" id="form">
+    <input type="email" name="email" id="email" placeholder="Enter you email address here!!!" required>
+    <input type="submit" name="submit" id="submit" value="Submit">
+</form>
+    <nav id="nav-bar">
+      <ul class="nav-ul">
+        <li class="nav-link"><a href="#home">Home</a></li>
+        <li class="nav-link"><a href="#services">Services</a></li>
+        <li class="nav-link"><a href="#pricing">Pricing</a></li>
+        <li class="nav-link"><a href="#contact">Contact Us</a></li>
+      <ul>
+    </nav>
+  </header>
+  <div class="video-class">
+  </div>
+  <div class="container">
+    <section id="services">
+        <iframe id="video" src="https://www.youtube.com/embed/1gyTUHP6ne8" frameborder="0"></iframe>
+    </section>
+    <section id="services">
+        <div class="web-dev">
+          <h2>Website developement</h2>
+          <p>
+           We create you and disign your website for you. Base on your desires
+          </p>
+        </div>
+      </div>
+        <div class="app-dev">
+          <h2>App Development</h2>
+          <p>
+            In any language. Your app is garranteed. Trust us for your satisfaction. Your satisfaction is our priority
+          </p>
+      </div>
+      <div class="graphics-dev">
+          <h2>Graphics Design</h2>
+          <p>
+              Best in graphics designing in the town of buea.
+          </p>
+      </div>
+    </section>
+    <div class="container">
+    <section id="pricing">
+      <div class="product" id="web">
+        <div class="dev">Website</div>
+        <h2>$1800</h2>
+        <ol>
+          <li>Business Sites</li>
+          <li>E-learning.</li>
+          <li>E-commernce</li>
+          <li>Gaming-site</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="app">
+        <div class="dev">Apps</div>
+        <h2>$1200</h2>
+        <ol>
+          <li>Desktop</li>
+          <li>Andriod</li>
+          <li>IOS</li>
+          <li>Windows</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+      <div class="product" id="graphics">
+        <div class="dev">Graphics</div>
+        <h2>$600</h2>
+        <ol>
+          <li>Logos</li>
+          <li>Business Cards</li>
+          <li>Flyers</li>
+          <li>Rollups</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    </section>
+</div>
+</body>
